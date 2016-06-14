@@ -10,9 +10,9 @@ namespace StarForum.Presentation.Web.Areas.Forum.Controllers.API
 {
     public class ForumApiController : BaseApiRepositoryController
     {
-        public IEnumerable<string> Get()
+        public IEnumerable<string> GetLatest()
         {
-            return new string[] { "value1", "value2" };
+            return _forumRepository.GetLatestThreads();
         }
 
         // GET api/forumapi/5

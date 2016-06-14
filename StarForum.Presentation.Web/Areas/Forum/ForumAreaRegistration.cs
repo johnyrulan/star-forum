@@ -8,10 +8,12 @@ namespace StarForum.Presentation.Web.Areas.Forum
 
         public override void RegisterArea(AreaRegistrationContext context) 
         {
+          
+
             context.MapRoute(
                 "ForumDefault",
                 "Forum/{controller}/{action}/{id}",
-                new { action = "Index", controller = "Forum", id = UrlParameter.Optional }
+                new { action = "Latest", controller = "Forum", id = UrlParameter.Optional }
             );
         }
     }

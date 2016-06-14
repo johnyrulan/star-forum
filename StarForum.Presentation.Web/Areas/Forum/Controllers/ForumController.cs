@@ -5,10 +5,10 @@ namespace StarForum.Presentation.Web.Areas.Forum.Controllers
 {
     public class ForumController : BaseRepositoryController
     {
-        public ActionResult Index()
+        public JsonResult Latest()
         {
             var latestPosts = _forumRepository.GetLatestThreads();
-            return View(latestPosts);
+            return Json(latestPosts, JsonRequestBehavior.AllowGet);
         }
     }
 }

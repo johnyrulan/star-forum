@@ -176,6 +176,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Framework\BaseApiRepositoryController.cs" />
     <Compile Include="Framework\BaseRepositoryController.cs" />
+    <Compile Include="Framework\ApiJsonFormatter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -244,6 +245,10 @@
     <ProjectReference Include="..\StarForum.Domain.Services\StarForum.Domain.Services.csproj">
       <Project>{ad0a6b7c-b79f-4dd3-8e01-44025175bb74}</Project>
       <Name>StarForum.Domain.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StarForum.Infrastructure.Data\StarForum.Infrastructure.Data.csproj">
+      <Project>{449a2733-8133-42ba-8e7a-1b570697f140}</Project>
+      <Name>StarForum.Infrastructure.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
