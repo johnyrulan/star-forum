@@ -1,21 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using StarForum.Presentation.Web.Framework;
 
 namespace StarForum.Presentation.Web.Areas.Forum.Controllers
 {
-    public class ForumController : Controller
+    public class ForumController : BaseRepositoryController
     {
-        private ForumRepository _forumRepository { get; set; }
-
-        public ForumController()
-        {
-            _forumRepository = new ForumRepository();
-        }
-
-        public string Index()
+        public ActionResult Index()
         {
             var latestPosts = _forumRepository.GetLatestThreads();
             return View(latestPosts);

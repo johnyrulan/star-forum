@@ -166,6 +166,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Areas\Forum\Controllers\API\ForumApiController.cs" />
     <Compile Include="Areas\Forum\Controllers\ForumController.cs" />
     <Compile Include="Areas\Forum\ForumAreaRegistration.cs" />
     <Compile Include="Configuration\BundleConfig.cs" />
@@ -173,6 +174,8 @@
     <Compile Include="Configuration\RouteConfig.cs" />
     <Compile Include="Configuration\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Framework\BaseApiRepositoryController.cs" />
+    <Compile Include="Framework\BaseRepositoryController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
