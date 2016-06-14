@@ -8,11 +8,17 @@ namespace StarForum.Presentation.Web.Areas.Forum.Controllers
 {
     public class ForumController : Controller
     {
-        //
-        // GET: /Forum/Forum/
+        private ForumRepository _forumRepository { get; set; }
+
+        public ForumController()
+        {
+            _forumRepository = new ForumRepository();
+        }
+
         public string Index()
         {
-            return "Hello! This is from the Forum Controller!";
+            var latestPosts = _forumRepository.GetLatestThreads();
+            return View(latestPosts);
         }
 	}
 }
