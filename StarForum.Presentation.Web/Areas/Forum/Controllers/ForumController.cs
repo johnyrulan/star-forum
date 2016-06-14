@@ -20,5 +20,5 @@ namespace StarForum.Presentation.Web.Areas.Forum.Controllers
             var latestPosts = _forumRepository.GetLatestThreads();
             return View(latestPosts);
         }
-	}
+    }
 }
