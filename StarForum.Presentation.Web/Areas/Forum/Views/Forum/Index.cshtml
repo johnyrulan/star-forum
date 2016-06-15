@@ -7,24 +7,19 @@
 
 <br /><br />
 
-<p>
-    @Html.ActionLink("Start a new discussion", "Create")
-</p>
+@* ReSharper disable once Html.PathError *@
+<p><a href="/Forum/New">Start a new discussion</a></p>
 
 <h2>Latest Posts</h2>
 
 <table class="table">
     <tr>
-        <th></th>
+        <th>Title</th>
     </tr>
 
-@foreach (var item in Model.LatestThreads) {
+@foreach (var thread in Model.LatestThreads) {
     <tr>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
+        <td><a href="#"><i>@thread.Title</i></a></td>       
     </tr>
 }
 

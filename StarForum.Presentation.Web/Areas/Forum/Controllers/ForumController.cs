@@ -9,12 +9,14 @@ namespace StarForum.Presentation.Web.Areas.Forum.Controllers
     {
         public ActionResult Index()
         {
+            var persistedThreads = _forumRepository.GetLatestThreads();
+
             var latestThreads = new Thread[4]
             {
-                new Thread(), 
-                new Thread(), 
-                new Thread(), 
-                new Thread()
+                new Thread { Title = persistedThreads[0] }, 
+                new Thread { Title = persistedThreads[1] }, 
+                new Thread { Title = persistedThreads[2] }, 
+                new Thread { Title = persistedThreads[3] }
             };
 
             return View(new IndexViewModel { LatestThreads = latestThreads });

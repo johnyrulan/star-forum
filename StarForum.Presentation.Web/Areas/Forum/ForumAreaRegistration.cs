@@ -7,9 +7,7 @@ namespace StarForum.Presentation.Web.Areas.Forum
         public override string AreaName { get { return "Forum"; } }
 
         public override void RegisterArea(AreaRegistrationContext context) 
-        {
-          
-
+        {        
             context.MapRoute(
                 "ForumDefault",
                 "Forum/{controller}/{action}/{id}",
