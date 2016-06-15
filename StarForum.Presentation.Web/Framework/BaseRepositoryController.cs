@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using StarForum.Infrastructure.Data.Repositories;
 
 namespace StarForum.Presentation.Web.Framework
@@ -10,7 +6,7 @@ namespace StarForum.Presentation.Web.Framework
     public class BaseRepositoryController : Controller
     {
         protected ForumRepository _forumRepository { get; set; }
-        public BaseRepositoryController() : base()
+        public BaseRepositoryController()
         {
             _forumRepository = new ForumRepository();
         }

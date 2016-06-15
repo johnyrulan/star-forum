@@ -169,6 +169,7 @@
     <Compile Include="Areas\Forum\Controllers\API\ForumApiController.cs" />
     <Compile Include="Areas\Forum\Controllers\ForumController.cs" />
     <Compile Include="Areas\Forum\ForumAreaRegistration.cs" />
+    <Compile Include="Areas\Forum\ViewModels\IndexViewModel.cs" />
     <Compile Include="Configuration\BundleConfig.cs" />
     <Compile Include="Configuration\FilterConfig.cs" />
     <Compile Include="Configuration\RouteConfig.cs" />
@@ -193,6 +194,7 @@
     <Content Include="Assets\Libraries\Bootstrap\bootstrap.js" />
     <Content Include="Assets\Libraries\Bootstrap\bootstrap.min.js" />
     <Content Include="Areas\Forum\Views\web.config" />
+    <Content Include="Areas\Forum\Views\Forum\Index.cshtml" />
     <None Include="Assets\Libraries\jQuery\jquery-1.10.2.intellisense.js" />
     <Content Include="Assets\Libraries\jQuery\jquery-1.10.2.js" />
     <Content Include="Assets\Libraries\jQuery\jquery-1.10.2.min.js" />
@@ -222,12 +224,11 @@
     <Content Include="Assets\Libraries\jQuery\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Forum\ViewModels\" />
-    <Folder Include="Areas\Forum\Views\Forum\" />
     <Folder Include="Areas\Forum\Views\Home\" />
     <Folder Include="Areas\Forum\Views\Shared\" />
     <Folder Include="Assets\Fonts\" />
     <Folder Include="Assets\Images\" />
+    <Folder Include="Middleware\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\Forum\" />
   </ItemGroup>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StarForum.Infrastructure.Data.Repositories
+﻿namespace StarForum.Infrastructure.Data.Repositories
 {
     public class ForumRepository
     {

@@ -1,7 +1,4 @@
-﻿using System.Net.Http.Headers;
-using System.Web.Http;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
+﻿using System.Web.Http;
 using StarForum.Presentation.Web.Framework;
 
 namespace StarForum.Presentation.Web.Configuration
