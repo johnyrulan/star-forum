@@ -1,4 +1,4 @@
-﻿namespace StarForum.Domain.Core.Forum
+﻿namespace StarForum.Domain.Core.Forum.Roots
 {
     public class Forum
     {

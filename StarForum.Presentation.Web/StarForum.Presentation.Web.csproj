@@ -189,6 +189,7 @@
     <Content Include="Assets\Libraries\Bootstrap\bootstrap.min.css" />
     <Content Include="Assets\favicon.ico" />
     <Content Include="Assets\Libraries\Bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\Styles\Header.css" />
     <Content Include="Global.asax" />
     <Content Include="Assets\Styles\Site.css" />
     <Content Include="Assets\Libraries\Bootstrap\bootstrap.js" />

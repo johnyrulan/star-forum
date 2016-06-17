@@ -25,6 +25,9 @@ namespace StarForum.Presentation.Web.Configuration
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Assets/Libraries/Bootstrap/bootstrap.css",
                       "~/Assets/Styles/Site.css"));
+
+            bundles.Add(new StyleBundle("~/bundles/customcss").Include(
+                      "~/Assets/Styles/Header.css"));
         }
     }
 }

@@ -39,9 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forum\Thread.cs" />
+    <Compile Include="Forum\Roots\Thread.cs" />
     <Compile Include="Forum\Post.cs" />
-    <Compile Include="Forum\Forum.cs" />
+    <Compile Include="Forum\Roots\Forum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

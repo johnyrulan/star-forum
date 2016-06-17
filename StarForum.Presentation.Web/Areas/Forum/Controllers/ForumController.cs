@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using StarForum.Domain.Core.Forum;
+using StarForum.Domain.Core.Forum.Roots;
 using StarForum.Presentation.Web.Areas.Forum.ViewModels;
 using StarForum.Presentation.Web.Framework;
 
