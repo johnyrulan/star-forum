@@ -14,7 +14,7 @@ namespace StarForum.Presentation.Web.Configuration
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{action}/{id}",
+                routeTemplate: "api/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional, controller = "ForumApi", action = "GetLatest" }
             );
 

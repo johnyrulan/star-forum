@@ -42,6 +42,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ForumRepository.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StarForum.Domain.Core\StarForum.Domain.Core.csproj">
+      <Project>{04d38e9c-ff90-4941-abdb-ad174ea5d3e9}</Project>
+      <Name>StarForum.Domain.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -10,7 +10,7 @@ namespace StarForum.Presentation.Web.Areas.Forum
         {        
             context.MapRoute(
                 "ForumDefault",
-                "Forum/{controller}/{action}/{id}",
+                "Forum/{action}/{id}",
                 new { action = "Index", controller = "Forum", id = UrlParameter.Optional }
             );
         }

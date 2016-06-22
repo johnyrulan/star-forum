@@ -13,7 +13,7 @@ namespace StarForum.Presentation.Web.Configuration
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Assets/Libraries/jQuery/jquery.validate*"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
+            // Use the development version of Modernizr to develop with and learn fromB. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Assets/Libraries/Modernizr/modernizr-*"));
@@ -27,7 +27,7 @@ namespace StarForum.Presentation.Web.Configuration
                       "~/Assets/Styles/Site.css"));
 
             bundles.Add(new StyleBundle("~/bundles/customcss").Include(
-                      "~/Assets/Styles/Header.css"));
+                      "~/Assets/Styles/*.css"));
         }
     }
 }

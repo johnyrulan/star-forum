@@ -1,4 +1,6 @@
-﻿namespace StarForum.Infrastructure.Data.Repositories
+﻿using StarForum.Domain.Core.Forum.Roots;
+
+namespace StarForum.Infrastructure.Data.Repositories
 {
     public class ForumRepository
     {
@@ -8,7 +10,13 @@
                                   "Can someone help me with this?",
                                   "JavaScript error!",
                                   "Where can I start learning?",
-                                  "Looking for work..."};
+                                  "Looking for work...",
+                                  "Sample post"};
+        }
+
+        public void AddNewPost(Thread thread)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
